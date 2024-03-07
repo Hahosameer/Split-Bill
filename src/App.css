@@ -1,0 +1,593 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background-color: red; */
+   min-width: 100%;
+   height: 100vh;
+
+ }
+
+ .leftComponent {
+   width: 40%;
+   /* background-color: orange; */
+   height: 400px;
+   margin-right: 10px;
+   border: 1px solid black;
+   box-shadow: 5px 5px 15px black;
+ }
+
+ .rightComponent {
+   width: 40%;
+   /* background-color: gray; */
+   height: 400px;
+ 
+ }
+
+ .FriendsList {
+   width: 100%;
+   height: 60%;
+   right: 0;
+   top: 0;
+   /* background-color: green; */
+   overflow-y: scroll;
+ }
+
+ .inputBox {
+   height: 40%;
+   /* background-color: aqua; */
+ }
+
+ .FriendsList::-webkit-scrollbar {
+   width: 8px;
+ }
+
+ .FriendsList::-webkit-scrollbar-thumb {
+   border-radius: 20px;
+   background-color: #fff;
+
+
+ }
+
+ .FriendsList:hover::-webkit-scrollbar-thumb {
+   background-color: #BCC0C4
+ }
+
+ .inputValue {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   font-size: 20px;
+   margin-top: 5px;
+ }
+
+ .inputValue input {
+   width: 250px;
+   height: 30px;
+   border-radius: 10px;
+   padding: 10PX;
+
+ }
+
+ .addBtn {
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   padding-right: 10px;
+   /* background-color: red; */
+ }
+
+ .addBtn button {
+
+   /* margin-left: 252px; */
+   width: 250px;
+   margin-top: 5px;
+   height: 30px;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: orange;
+   border: none;
+   border: 1px solid black;
+ }
+
+ .addFriendBtn {
+   min-width: 100px;
+   height: 30px;
+   margin-top: 20px;
+   margin-left: 200px;
+   /* margin-bottom: 50px; */
+   background-color: orange;
+   border: none;
+   border-radius: 10px;
+   font-weight: 600;
+   padding: 10px;
+   border: 1px solid black;
+   cursor: pointer;
+
+ }
+
+ .card {
+   display: flex;
+   align-items: center;
+   /* justify-content: space-around; */
+   background-color: rgb(233, 229, 229);
+   /* background-color: orange; */
+
+   margin: 10px 5px;
+ }
+
+ .card:hover {
+   background-color: rgb(214, 209, 209);
+   cursor: pointer;
+ }
+
+ .selectBtbn {
+   width: 100px;
+   height: 35px;
+   border-radius: 10px;
+   font-weight: 600;
+   background-color: orange;
+   border: none;
+   margin: 20px;
+   cursor: pointer;
+   border: 1px solid black;
+
+ }
+
+ .userName {
+   width: 300px;
+   padding-left: 10px;
+   /* background-color: red; */
+ }
+
+
+
+ /* itemValue */
+ .splitMain {
+   width: 100%;
+   height: 100%;
+   box-shadow: 5px 5px 15px black;
+   background-color: rgb(248, 218, 163);
+ }
+
+ .splitMain h1 {
+   text-align: center;
+   padding: 20px;
+   text-transform: capitalize;
+   /* margin: 20px; */
+
+ }
+
+ .itemValue {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* background-color: red; */
+   width: 100%;
+   height: 50px;
+   padding: 20px 40px;
+   margin: 10px 0;
+ }
+
+ .itemValue input {
+   width: 100px;
+   height: 30px;
+   border: none;
+   outline: 0;
+   padding-left: 10px;
+ }
+
+ .dropDown {
+   height: 30px;
+   width: 100px;
+   border: none;
+   outline: 0;
+   padding-left: 25px;
+
+
+ }
+
+ .splitBtn {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   /* background-color: orange; */
+ }
+
+ .splitBtn button {
+   width: 100px;
+   height: 30px;
+   margin-right: 40px;
+   background-color: orange;
+   border: none;
+   font-weight: 600;
+   border-radius: 10px;
+   border: 1px solid black;
+
+ }
+
+ .image {
+   padding: 10px;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background-size: cover;
+ }
+
+ .image img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+ }
+
+
+ @media (max-width: 953px) {
+   .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* background-color: red; */
+     min-width: 100%;
+     height: 100vh;
+
+   }
+
+   .leftComponent {
+     width: 90%;
+     /* background-color: orange; */
+     height: 400px;
+     margin-right: 10px;
+     border: 1px solid black;
+     margin-bottom: 60px;
+   }
+
+   .rightComponent {
+     width: 90%;
+     /* background-color: gray; */
+     height: 400px;
+   }
+
+   .userName {
+     width: 300px;
+     /* height: 35px; */
+     padding-left: 10px;
+     /* display: flex; */
+
+     /* margin-left: 20px; */
+   }
+
+   .userName {
+     width: 500px;
+     /* height: 35px; */
+     padding-left: 10px;
+     /* display: flex; */
+
+     /* margin-left: 20px; */
+   }
+
+   .addFriendBtn {
+     min-width: 100px;
+     height: 30px;
+     margin: 20px auto;
+
+     background-color: orange;
+     border: none;
+     border-radius: 10px;
+     font-weight: 600;
+     padding: 10px;
+     border: 1px solid black;
+
+   }
+
+   .inputValue input {
+     width: 170px;
+     height: 30px;
+     border-radius: 10px;
+     padding: 10PX;
+
+   }
+
+   .addBtn button {
+     width: 170px;
+   }
+
+   .addFriendBtn {
+     min-width: 100px;
+     height: 30px;
+     background-color: orange;
+     border: none;
+     border-radius: 10px;
+     font-weight: 600;
+     padding: 10px;
+     margin-left: 40%;
+     border: 1px solid black;
+
+   }
+
+   .image {
+     padding: 10px;
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     background-size: cover;
+   }
+
+   .image img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* background-color: red; */
+     min-width: 100%;
+     height: 100vh;
+
+   }
+
+   .dropDown {
+     height: 30px;
+     width: 100px;
+     border: none;
+     outline: 0;
+     padding-left: 25px;
+
+   }
+
+   .leftComponent {
+     width: 90%;
+     /* background-color: orange; */
+     height: 400px;
+     margin-right: 10px;
+     border: 1px solid black;
+   }
+
+   .rightComponent {
+     width: 90%;
+     /* background-color: gray; */
+     height: 400px;
+   }
+
+   .userName {
+     width: 300px;
+     /* height: 35px; */
+     padding-left: 10px;
+     /* display: flex; */
+
+     /* margin-left: 20px; */
+   }
+
+   .userName {
+     width: 500px;
+     /* height: 35px; */
+     padding-left: 10px;
+     /* display: flex; */
+
+     /* margin-left: 20px; */
+   }
+
+   .addFriendBtn {
+     min-width: 100px;
+     height: 30px;
+     margin: 20px auto;
+
+     background-color: orange;
+     border: none;
+     border-radius: 10px;
+     font-weight: 600;
+     padding: 10px;
+     border: 1px solid black;
+
+   }
+
+   .inputValue input {
+     width: 170px;
+     height: 30px;
+     border-radius: 10px;
+     padding: 10PX;
+
+   }
+
+   .addBtn button {
+     width: 170px;
+   }
+
+   .itemValue input {
+     width: 60px;
+     height: 30px;
+     border: none;
+     outline: 0;
+     padding-left: 10px;
+   }
+
+   .dropDown {
+     height: 30px;
+     width: 60px;
+     border: none;
+     outline: 0;
+     padding-left: 50px;
+
+   }
+
+   .splitMain h1 {
+     text-align: center;
+     padding: 20px;
+     text-transform: capitalize;
+     font-size: 16px;
+     /* margin: 20px; */
+
+   }
+
+   .selectBtbn {
+     width: 60px;
+     height: 35px;
+
+
+   }
+
+   .image {
+     padding: 10px;
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     background-size: cover;
+   }
+
+   .image img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+   }
+
+   .addFriendBtn {
+     min-width: 100px;
+     height: 30px;
+     background-color: orange;
+     border: none;
+     border-radius: 10px;
+     font-weight: 600;
+     padding: 10px;
+     margin-left: 40%;
+     border: 1px solid black;
+
+   }
+ }
+
+ @media (max-width: 409px) {
+   .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-width: 100%;
+     height: 100vh;
+
+   }
+
+   .leftComponent {
+     width: 90%;
+     height: 400px;
+     margin-right: 10px;
+     border: 1px solid black;
+   }
+
+   .rightComponent {
+     width: 90%;
+     height: 400px;
+   }
+
+   .userName {
+     width: 300px;
+     padding-left: 10px;
+
+   }
+
+   .userName {
+     width: 500px;
+     padding-left: 10px;
+     /* display: flex; */
+
+     /* margin-left: 20px; */
+   }
+
+   .addFriendBtn {
+     min-width: 100px;
+     height: 30px;
+     background-color: orange;
+     border: none;
+     border-radius: 10px;
+     font-weight: 600;
+     padding: 10px;
+     margin-left: 30%;
+     border: 1px solid black;
+
+   }
+
+   .inputValue input {
+     width: 130px;
+     height: 30px;
+     border-radius: 10px;
+     padding: 10PX;
+
+   }
+
+   .addBtn button {
+     width: 130px;
+   }
+
+   .itemValue input {
+     width: 60px;
+     height: 30px;
+     border: none;
+     outline: 0;
+     padding-left: 10px;
+   }
+
+   .dropDown {
+     height: 30px;
+     width: 60px;
+     border: none;
+     outline: 0;
+     padding-left: 25px;
+
+   }
+
+   .splitMain h1 {
+     text-align: center;
+     padding: 20px;
+     text-transform: capitalize;
+     font-size: 16px;
+     /* margin: 20px; */
+
+   }
+
+   .image {
+     width: 170px;
+   }
+
+   .image img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+   }
+ }
+
+ @media (max-width: 409px) {
+   .inputValue input {
+     width: 100px;
+     height: 30px;
+     border-radius: 10px;
+     padding: 10PX;
+
+   }
+
+   .addBtn button {
+     width: 100px;
+   }
+
+   .image {
+     width: 170px;
+   }
+
+   .image img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+   }
+
+ }
